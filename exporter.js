@@ -42,7 +42,7 @@ const metrics = () => {
         logger.debug(p, p.exec_interpreter, '>>>>>>');
         const conf = {
           id: p.pm_id,
-          name: p.name,
+          name: p.name + '-' + p.pm_id,
           version: p.pm2_env.version ? p.pm2_env.version : 'N/A',
           instance: p.pm2_env.NODE_APP_INSTANCE,
           interpreter: p.pm2_env.exec_interpreter,
